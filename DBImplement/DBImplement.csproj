@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210414084041_Mig1.cs" />
+    <Compile Remove="Migrations\20210414084041_Mig1.Designer.cs" />
+    <Compile Remove="Migrations\20210415122544_Mig1.cs" />
+    <Compile Remove="Migrations\20210415122544_Mig1.Designer.cs" />
+    <Compile Remove="Migrations\20210418122809_Mig1.cs" />
+    <Compile Remove="Migrations\20210418122809_Mig1.Designer.cs" />
+    <Compile Remove="Migrations\20210418123314_Mig1.cs" />
+    <Compile Remove="Migrations\20210418123314_Mig1.Designer.cs" />
+    <Compile Remove="Migrations\20210420214048_Mig1.cs" />
+    <Compile Remove="Migrations\20210420214048_Mig1.Designer.cs" />
+    <Compile Remove="Migrations\20210427224435_mig1.cs" />
+    <Compile Remove="Migrations\20210427224435_mig1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="PDFsharp-MigraDoc" Version="1.50.5147" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
